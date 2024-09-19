@@ -18,8 +18,8 @@
                 <div class="artboard artboard-demo phone-3">
                     <div class="stats shadow">
                         <div class="stat">
-                            <div class="stat-value">9400</div>
-                            <div class="stat-desc">21% more than last month</div>
+                            <div id="account_money" class="stat-value">9400</div>
+                            <div class="stat-desc">avabli money</div>
                         </div>
                     </div>
                     <div class="divider"></div>
@@ -30,7 +30,7 @@
                     </div>
                     <div class="divider"></div>
                     <!-- from part start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -50,11 +50,34 @@
                         </form>
                       </div>
                     <!-- from part end -->
+
+                     <!-- casout form part stat -->
+                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Cas Out</span>
+                            </label>
+                            <input id="casout-money" type="text" placeholder="Add Money" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin Number</span>
+                            </label>
+                            <input id="casout-pin" type="password" placeholder="Pin Number" class="input input-bordered" autocomplete="off" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="casout-add-money" class="btn btn-primary">CasOut</button>
+                          </div>
+                        </form>
+                      </div>
+                     <!-- casout form part end -->
                 </div>
             </div>
         </div>
     </main>
     <script src="./add_money.js"></script>
+    <script src="./casout.js"></script>
 </body>
 
 </html>
